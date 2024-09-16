@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Handle More Events</h1>
+        <button id="buttonF">click here</button>
+        <input id="text-field" type="text">
+    </div>
+    <script>
+        document.getElementById('text-field').addEventListener('focus', function(){
+            console.log('mouse entered into the input field')
+        })
+        document.getElementById('text-field').addEventListener('keyup', function(event){
+            console.log(event.target.value)
+        })
+        document.getElementById('buttonF').addEventListener('mousemove',function(){
+            console.log('kicchuna bhai')
+        })
+    </script>
+</body>
+</html>
